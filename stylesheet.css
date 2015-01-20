@@ -1,0 +1,153 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* ::::: Menubar, Bookmarks Toolbar, and Other Toolbars ::::: */
+
+#lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin: 1px 0 !important;
+  padding: 3px 5px !important;
+}
+
+#lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Constrain height, but let the width work itself out.  They use various icons with 
+   * various aspect ratios as state changes.  This does mean the toolbarbutton width will vary.
+   */ 
+  height: 16px !important;
+  min-height: 16px !important;
+}
+
+/* ::::: Tabs Toolbar ::::: */
+
+#TabsToolbar:not([tabsontop="false"]) > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin: 3px 0 2px !important;
+  padding: 2px 5px !important;
+}
+
+#TabsToolbar:not([tabsontop="false"]) > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ::::: Nav Bar ::::: */
+
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  border: 1px solid #131313 !important;
+  -moz-border-top-colors: #131313 !important;
+  -moz-border-left-colors: #101010 !important;
+  -moz-border-right-colors: #101010 !important;
+  -moz-border-bottom-colors: #000000 !important;
+  border-radius: 2px !important;
+  padding: 3px 8px !important;
+  background: transparent url("chrome://global/skin/subskins/flatter-toolbarbuttons-1/toolbarbutton-gradient-bg.75pct.png") top left repeat-x !important;
+  background-clip: padding-box !important;
+  background-origin: padding-box !important;
+}
+
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1):hover:not([disabled="true"]) {
+  background: transparent url("chrome://global/skin/subskins/flatter-toolbarbuttons-1/toolbarbutton-gradient-bg.65pct.alt2.png") top left repeat-x !important;
+  background-clip: padding-box !important;
+}
+
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1):hover:active:not([disabled="true"]),
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1)[open="true"]:not([disabled="true"]),
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1)[checked="true"],
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1)[checked="true"]:hover,
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1)[checked="true"]:hover:active {
+  background: #545454 url("chrome://global/skin/subskins/flatter-toolbarbuttons-1/navbar-inner-gradient-active-bg.alt1.png") top left repeat-x !important;
+  background-clip: padding-box !important;
+}
+
+#nav-bar #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ::::: Nav Bar Overflow Panel ::::: */
+
+.widget-overflow-list #lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin: 1px 0 !important;
+  padding: 0 6px !important;
+}
+
+.widget-overflow-list #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ::::: PanelUI Popup and Synth Menupanel ::::: */
+
+#PanelUI-contents > #lpt_lastpass-compact-btn:not(.toolbarbutton-1),
+#customization-panelHolder #lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin: 6px 0 1px !important;
+  padding: 0 6px !important;
+}
+
+#PanelUI-contents > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon,
+#customization-panelHolder #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  /* See panelUIOverlay.css */
+  margin: 4px calc(((22.35em / 3 - 0.1px) - (24px + 6px + 6px + 1px + 1px)) / 2 ) !important;
+  padding: 0 !important;
+}
+
+#PanelUI-contents > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-text,
+#customization-panelHolder #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-text,
+#PanelUI-contents > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-multiline-text,
+#customization-panelHolder #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-multiline-text {
+  margin: 2px 0 0 !important;
+  padding: 0 !important;
+}
+
+/* ::::: Customization Palette ::::: */
+
+#customization-palette #lpt_lastpass-compact-btn:not(.toolbarbutton-1) {
+  margin: 1px 0 !important;
+  padding: 3px 5px !important;
+}
+
+#customization-palette #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  /* See panelUIOverlay.css */
+  margin: 4px calc(((22.35em / 3 - 0.1px) - (24px + 6px + 6px + 1px + 1px)) / 2 ) !important;
+  padding: 0 !important;
+}
+
+#customization-palette #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-text {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#customization-palette #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-multiline-text {
+  /* See panelUIOverlay.css */
+  margin: 1px 5px 2px 6px !important;
+  padding: 0 !important;
+}
+
+/* ::::: Icon Height ::::: */
+
+/* Constrain height, but let the width work itself out.  They use various icons with 
+ * various aspect ratios to convey state.  This does mean the toolbarbutton width will 
+ * vary as state changes.
+ */ 
+#lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  height: 16px !important;
+  min-height: 16px !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon,
+#customization-panelHolder #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon,
+#customization-palette #lpt_lastpass-compact-btn:not(.toolbarbutton-1) > .toolbarbutton-icon {
+  height: 24px !important;
+  min-height: 24px !important;
+}
+
+/* They hide the dropmarker in CSS.  This has a menupopup when you're logged in, 
+ * so normally we would show the dropmarker, but they set vertical orientation 
+ * which puts the dropmarker below it.  So we leave it hidden.
+ * #lpt_lastpass-compact-btn .toolbarbutton-menu-dropmarker {
+ *  display: -moz-box !important;
+ * }
+ */
